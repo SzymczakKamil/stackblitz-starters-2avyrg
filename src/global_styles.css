@@ -1,0 +1,20 @@
+/* Add application styles & imports to this file! */
+.element {
+  height: 68px;
+  background-color: aqua;
+  margin: 4px 12px
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+
+.wrapper.collapsed::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 68px;
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(255,255,255,1));
+}
